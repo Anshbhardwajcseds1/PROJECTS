@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #97a783;
+    color: white;
+}
+
+.header {
+    background: #debbbb;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    font-weight: bold;
+    position: relative;
+}
+
+.profile-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #1db954;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.main {
+    padding: 20px;
+}
+
+.main h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.song-card {
+    background: #1a1a1a;
+    padding: 12px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+    transition: 0.2s ease;
+    border: 1px solid #222;
+}
+
+.song-card:hover {
+    background: #242424;
+    transform: scale(1.02);
+}
+
+.cover {
+    width: 55px;
+    height: 55px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #1db954, #1ed760);
+}
+
+.info {
+    margin-left: 12px;
+    flex: 1;
+}
+
+.info h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.info p {
+    margin: 3px 0 0;
+    font-size: 13px;
+    color: #bfbfbf;
+}
+
+.play-btn {
+    background: #1db954;
+    border: none;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.play-btn:hover {
+    background: #3acc00;
+}
+
+.player {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #181818;
+    padding: 12px;
+    border-top: 2px solid #252525;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.now-playing {
+    font-size: 14px;
+}
+
+.controls button {
+    background: none;
+    color: #1db954;
+    border: none;
+    font-size: 20px;
+    margin: 0 8px;
+    cursor: pointer;
+}
+
+.play-big {
+    font-size: 26px;
+}
+
+.volume {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.volume-bar {
+    width: 80px;
+    height: 6px;
+    background: #333;
+    border-radius: 10px;
+}
+
+.fill {
+    width: 50%;
+    height: 100%;
+    background: #1db954;
+    border-radius: 10px;
+}
