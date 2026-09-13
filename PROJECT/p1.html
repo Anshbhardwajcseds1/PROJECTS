@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A@nyone Search</title>
+    <link rel="stylesheet" href="p1.css">
+</head>
+
+<body>
+    <div class="page-wrap">
+        <header class="topbar">
+            <nav class="nav-links" aria-label="Main navigation">
+                <a href="#">Gmail</a>
+                <a href="#">Images</a>
+                <button class="apps-btn" type="button" aria-label="Google apps">⋮</button>
+            </nav>
+        </header>
+
+        <main class="container">
+            <div class="logo-wrap">
+                <div class="logo" aria-label="WikiFind">
+                    <span class="g-violet">W</span><span class="g-cyan">i</span><span class="g-blue">k</span><span class="g-green">i</span><span class="g-gold">F</span><span class="g-red">i</span><span class="g-purple">n</span><span class="g-teal">d</span>
+                </div>
+                <p class="tagline">Search smarter. Discover faster.</p>
+            </div>
+
+            <form class="search-box" id="searchForm">
+                <span class="search-icon">⌕</span>
+                <input type="text" id="searchInput" placeholder="Search anything..." autocomplete="off">
+                <button class="voice-btn" id="voiceBtn" type="button" aria-label="Voice search">🎙️</button>
+                <button id="searchBtn" type="submit">Search</button>
+            </form>
+
+            <div class="quick-searches" aria-label="Quick searches">
+                <button type="button" class="chip">AI</button>
+                <button type="button" class="chip">JavaScript</button>
+                <button type="button" class="chip">Python</button>
+                <button type="button" class="chip">Design</button>
+            </div>
+
+            <p id="message" class="message"></p>
+            <div id="results" class="results"></div>
+        </main>
+    </div>
+
+    <script src="p1.js"></script>
+</body>
+
+</html>

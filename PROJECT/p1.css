@@ -1,0 +1,276 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle at top, #ffffff 0%, #f3f7ff 40%, #eef4ff 100%);
+    color: #202124;
+    min-height: 100vh;
+}
+
+.page-wrap {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.topbar {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.nav-links a {
+    color: #3c4043;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.apps-btn,
+.voice-btn {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #5f6368;
+}
+
+.apps-btn {
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+.logo-wrap {
+    margin-bottom: 24px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: clamp(2.8rem, 7vw, 5.2rem);
+    font-weight: 800;
+    letter-spacing: -4px;
+    text-shadow: 0 12px 30px rgba(66, 133, 244, 0.12);
+}
+
+.tagline {
+    margin: 14px 0 0;
+    color: #5f6368;
+    font-size: 1rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.g-blue {
+    color: #4f8cff;
+}
+
+.g-red {
+    color: #ff6b6b;
+}
+
+.g-yellow {
+    color: #f7c948;
+}
+
+.g-green {
+    color: #2ec4a2;
+}
+
+.g-violet {
+    color: #7c5cff;
+}
+
+.g-cyan {
+    color: #2bb3ff;
+}
+
+.g-gold {
+    color: #f4b942;
+}
+
+.g-purple {
+    color: #9b5de5;
+}
+
+.g-teal {
+    color: #00b4d8;
+}
+
+.container {
+    width: 100%;
+    max-width: 760px;
+    text-align: center;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.94);
+    border: 1px solid #dfe1e5;
+    border-radius: 999px;
+    padding: 10px 16px;
+    box-shadow: 0 8px 24px rgba(32, 33, 36, 0.08);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.search-box:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 28px rgba(32, 33, 36, 0.12);
+}
+
+.search-box:focus-within {
+    box-shadow: 0 1px 8px rgba(32, 33, 36, 0.2);
+    border-color: #dfe1e5;
+}
+
+.search-icon {
+    font-size: 1.5rem;
+    color: #9aa0a6;
+    margin-right: 10px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 1.05rem;
+    color: #202124;
+    background: transparent;
+    min-width: 0;
+}
+
+button {
+    padding: 11px 20px;
+    border: none;
+    border-radius: 999px;
+    background: #f8f9fa;
+    color: #3c4043;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background 0.2s ease;
+}
+
+button:hover {
+    background: #f1f3f4;
+}
+
+.voice-btn {
+    background: transparent;
+    padding: 8px 10px;
+    margin-left: 0;
+    border-radius: 50%;
+}
+
+.voice-btn:hover {
+    background: #f1f3f4;
+}
+
+.quick-searches {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.chip {
+    background: #f3f6ff;
+    color: #1f2a44;
+    border: 1px solid #dfe9ff;
+    border-radius: 999px;
+    padding: 8px 14px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.chip:hover {
+    background: #eaf1ff;
+    transform: translateY(-1px);
+}
+
+.message {
+    min-height: 24px;
+    margin-top: 18px;
+    color: #5f6368;
+    font-size: 0.95rem;
+}
+
+.results {
+    margin-top: 20px;
+    text-align: left;
+    display: grid;
+    gap: 18px;
+}
+
+.result-card {
+    background: linear-gradient(180deg, #ffffff 0%, #f9fbff 100%);
+    border: 1px solid #ebebeb;
+    border-radius: 16px;
+    padding: 16px 18px;
+    box-shadow: 0 10px 24px rgba(60, 64, 67, 0.08);
+}
+
+.result-card a {
+    color: #1a0dab;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.result-card a:hover {
+    text-decoration: underline;
+}
+
+.result-card .url {
+    color: #006621;
+    font-size: 0.85rem;
+    margin-top: 6px;
+}
+
+.result-card .snippet {
+    color: #4d5156;
+    line-height: 1.6;
+    margin-top: 8px;
+}
+
+@media (max-width: 600px) {
+    .page-wrap {
+        padding: 20px 12px;
+    }
+
+    .search-box {
+        padding: 8px 12px;
+    }
+
+    button {
+        padding: 10px 14px;
+        font-size: 0.85rem;
+    }
+
+    .result-card {
+        padding: 14px;
+    }
+}
